@@ -53,7 +53,7 @@ int main(int argc, char **argv) {
   strncpy(party.player_name, argv[1], sizeof(party.player_name));
 
   goDungeon(&party);
-
+  printf("倒したモンスターの数=%d\n", party.num_killed_monsters);
   return 0;
 }
 
